@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый сайт на Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> <!-- Подключение собственного CSS файла -->
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="span1"><img src="fotos/bootstrap.png" alt="bootstrap logo">  Путешествуйте с Bootstrap</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Наши направления
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Европа</a></li>
+                            <li><a class="dropdown-item" href="#">Америка</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Поиск тура" aria-label="Поиск">
+                    <button class="btn btn-primary" type="submit">Подобрать</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <div class="container mt-4">
+        <!-- Секция слайдера -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="fotos/Paris.jpg" class="d-block w-100" alt="Paris">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Метка первого слайда</h3>
+                                    <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="fotos/Santorini3.jpg" class="d-block w-100" alt="Santorini">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Метка второго слайда</h3>
+                                <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos/New York.jpg" class="d-block w-100" alt="New York">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Метка третьего слайда</h3>
+                                <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Секция карточек -->
+        <div class="row mt-4 card-columns">
+            <div class="card">
+                <img src="fotos/Dubai.jpg" class="card-img-top" alt="Dubai">
+                <div class="card-body">
+                    <h5 class="card-title">Дубай</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Еду в Дубай</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="fotos/Tuscany.jpg" class="card-img-top" alt="Toscany">
+                <div class="card-body">
+                    <h5 class="card-title">Тоскания</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Хочу в Тосканию</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="fotos/Venice3.jpg" class="card-img-top" alt="Venice">
+                <div class="card-body">
+                    <h5 class="card-title">Венеция</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Мечтаю побывать</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Почему выбирают нас?</h3>
+        </div>
+        <!-- Секция аккордеона -->
+        <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Индивидуальный подход
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>Индивидуальный подход.</strong> Мы создаем уникальные туры, учитывая все ваши предпочтения и пожелания. Наши эксперты тщательно разрабатывают маршруты, чтобы каждая поездка стала незабываемой и соответствовала вашим ожиданиям.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Высокое качество обслуживания
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Высокое качество обслуживания.</strong> Мы сотрудничаем только с проверенными партнерами и отелями, обеспечивая комфорт и безопасность на каждом этапе путешествия. Наша команда всегда готова помочь вам в любой ситуации, предлагая круглосуточную поддержку.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Конкурентные цены и бонусы
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Конкурентные цены и бонусы.</strong> Мы предлагаем лучшие условия на рынке благодаря долгосрочному сотрудничеству с нашими партнерами. У нас регулярно проводятся акции и специальные предложения, а также предоставляются бонусы для постоянных клиентов.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white mt-4">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Контактная информация</h5>
+                    <p>Email: test@example.com</p>
+                    <p>Телефон: +7 (123) 456-7890</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Социальные сети</h5>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-facebook"></i> Facebook
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-twitter"></i> Twitter
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
